@@ -6,6 +6,7 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.dll
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -301,3 +302,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+RoguelikeCastle.vcxproj.filters
+RoguelikeCastle.vcxproj
+RoguelikeCastle.sln
