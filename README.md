@@ -7,4 +7,4 @@ You're a princess that must find your brave knight (SPOILER: He is probably in h
 #What is going on now?
 [Update no.][Thing]
 
-[0]         Planning project
+[1]         TextureManager should work. Now Animator.
