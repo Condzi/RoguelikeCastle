@@ -7,4 +7,4 @@ You're a princess that must find your brave knight (SPOILER: He is probably in h
 #What is going on now?
 [Update no.][Thing]
 
-[1]         TextureManager should work. Now Animator.
+[2]         Animator sub-class - cn::Frame is done, now left only Animator itself. And TileManager. Soon (not today, it's 0:45 and I'm               tired).
