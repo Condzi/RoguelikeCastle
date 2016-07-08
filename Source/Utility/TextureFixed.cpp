@@ -16,7 +16,7 @@ cn::TextureFixed::~TextureFixed()
 const sf::Texture & cn::TextureFixed::GetTextureReference()
 {
 #ifdef DEBUG
-	std::cout << "[DEBUG] Reference to texture \"" << m_pathToTexture << "\" sharded. Total references: " << m_referenceCounter + 1 << ".\n";
+	std::cout << "[#DEBUG] Reference to texture \"" << m_pathToTexture << "\" sharded. Total references: " << m_referenceCounter + 1 << ".\n";
 #endif // DEBUG
 	m_referenceCounter++;
 	return *m_texture;
@@ -28,7 +28,7 @@ bool cn::TextureFixed::ReturnTextureReference(const sf::Texture & texture)
 	{
 
 #ifdef DEBUG
-		std::cout << "[DEBUG] Reference to texture \"" << m_pathToTexture << "\" returned. Total references: " << m_referenceCounter - 1 << ".\n";
+		std::cout << "[#DEBUG] Reference to texture \"" << m_pathToTexture << "\" returned. Total references: " << m_referenceCounter - 1 << ".\n";
 #endif // DEBUG
 		
 		m_referenceCounter--;
@@ -36,7 +36,7 @@ bool cn::TextureFixed::ReturnTextureReference(const sf::Texture & texture)
 	}
 
 #ifdef DEBUG
-	std::cout << "[!DEBUG] Failed to return reference to texture \"" << m_pathToTexture << "\"\n";
+	std::cout << "[@DEBUG] Failed to return reference to texture \"" << m_pathToTexture << "\"\n";
 #endif // DEBUG
 
 	return false;
