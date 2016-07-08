@@ -22,6 +22,17 @@ const sf::Texture & cn::TextureFixed::GetTextureReference()
 	return *m_texture;
 }
 
+
+uint16_t cn::TextureFixed::GetReferenceCount()
+{
+	return m_referenceCounter;
+}
+
+std::string cn::TextureFixed::GetPath()
+{
+	return m_pathToTexture;
+}
+
 bool cn::TextureFixed::ReturnTextureReference(const sf::Texture & texture)
 {
 	if (this->m_texture == &texture)
@@ -36,20 +47,10 @@ bool cn::TextureFixed::ReturnTextureReference(const sf::Texture & texture)
 	}
 
 #ifdef DEBUG
-	std::cout << "[@DEBUG] Failed to return reference to texture \"" << m_pathToTexture << "\"\n";
+	std::cout << "[@sDEBUG] Failed to return reference to texture \"" << m_pathToTexture << "\"\n";
 #endif // DEBUG
 
 	return false;
-}
-
-uint16_t cn::TextureFixed::GetReferenceCount()
-{
-	return m_referenceCounter;
-}
-
-std::string cn::TextureFixed::GetPath()
-{
-	return m_pathToTexture;
 }
 
 bool cn::TextureFixed::LoadTextureFromFile(const std::string & path)

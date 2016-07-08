@@ -12,9 +12,9 @@ namespace cn //cn = CoNdzi :)
 		~TextureFixed();
 
 		const sf::Texture & GetTextureReference();
-		bool ReturnTextureReference(const sf::Texture & texture);
 		uint16_t GetReferenceCount();
 		std::string GetPath();
+		bool ReturnTextureReference(const sf::Texture & texture);
 
 		bool LoadTextureFromFile(const std::string & path);
 		bool SetTexture(sf::Texture & texture);
