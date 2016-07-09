@@ -1,6 +1,7 @@
 #pragma once
 #include "TextureFixed.hpp"
 
+
 namespace cn
 {
 	class TextureManager
