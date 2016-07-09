@@ -84,7 +84,7 @@ bool cn::Animator::Update()
 	float timeEleapsed = 0.f;
 
 	for (size_t i = 0; i < m_currentFrame; ++i)
-		timeEleapsed += m_frames[i].GetDurationValuesReference();
+		timeEleapsed += m_frames[i].GetDurationReference();
 
 	if (m_clock->getElapsedTime().asSeconds() > timeEleapsed)
 		m_currentFrame++;
