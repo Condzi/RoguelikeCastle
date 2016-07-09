@@ -1,3 +1,4 @@
+Temporary suspended (for few days)
 # Roguelike Castle
 Simple roguelike game in C++ and SFML
 
